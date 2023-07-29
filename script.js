@@ -24,10 +24,6 @@ const countryCodeSolve = (code) => {
     return regionName.of(code);
 }
 
-const mileToKm = (mile) => {
-    return mile * 1.609;
-}
-
 const convertFromTimeStamp = (timestamp, timezone) => {
     let convertFromTimezone = timezone / 3600;
 
@@ -70,7 +66,7 @@ const getWeather = async () => {
     weatherFeelsLike.innerHTML = `${json.main.feels_like.toFixed()}&#176`
     weatherHumidity.innerHTML = `${json.main.humidity}%`
     weatherAirPressure.innerHTML = `${json.main.pressure}hPa`
-    weatherWindSpeed.innerHTML = `${mileToKm(json.wind.speed).toFixed(2)}km/s`
+    weatherWindSpeed.innerHTML = `<p>${json.wind.speed.toFixed(2)} ${currUnit === 'metric' ? 'meter/sec' : 'miles/hour'}</p>`
 }
 
 
@@ -97,4 +93,4 @@ weatherFarenheit.addEventListener('click', () => {
 //     })
 // }
 
-document.body.addEventListener('load', getWeather());
+getWeather();
