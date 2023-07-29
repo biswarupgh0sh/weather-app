@@ -114,6 +114,9 @@
     .weather-info{
         margin-top: 1rem;
     }
+    .weather-icon{
+        width: 95px;
+    }
 }
 @media(max-width: 445px){
     .weather-app{
