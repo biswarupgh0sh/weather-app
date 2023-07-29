@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.weather-app{
+    background: #171717;
+    border-radius: 1rem;
+    color: #fff;
+    width: 40%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-search{
+    background: #1e1e1e;
+    border: none;
+    outline: none;
+    padding: 0.2rem 1rem;
+    color: #fff;
+    border-radius: 1rem;
+}
+.weather-search-form{
+    background: #1e1e1e;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+.weather-units{
+    font-size: 1.5rem;
+}
+.weather-units span{
+    cursor: pointer;
+    margin-left: 5px;
+}
+.weather-body{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.weather-datetime{
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.weather-forecast{
+    background: #1e1e1e;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+.weather-icon{
+    width: 150px;
+}
+.weather-temperature{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+}
+.weather-minmax{
+    display: flex;
+    justify-content: center;
+}
+.minvalue{
+    margin-right: 10px;
+}
+.weather-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1.5rem;
+}
+.weather-card{
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+.weather-card i{
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+}
+@media(max-width: 936px){
+    .weather-app{
+        width: 80%;
+    }
+}
+@media(max-width: 650px){
+    .weather-app{
+        width: 90%;
+    }
+    .weather-header{
+        flex-direction: column;
+    }
+    .weather-units{
+        margin-top: 1rem;
+    }
+    .weather-body{
+        margin-top: 0.3rem;
+    }
+    .weather-datetime{
+        margin-bottom: 0.3rem;
+    }
+    .weather-temperature{
+        margin-bottom: 5px;
+    }
+    .weather-info{
+        margin-top: 1rem;
+    }
+}
+@media(max-width: 445px){
+    .weather-app{
+        margin: 0 auto;
+    }
+    .weather-search{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width: 390px){
+    .weather-search{
+        display: flex;
+        justify-content: center;
+    }
+    .weather-search-form{
+        width: 80%;
+        padding: 0.5rem 0.3rem;
+    }
+    .weather-info{
+        grid-template-columns: none;
+    }
+}
