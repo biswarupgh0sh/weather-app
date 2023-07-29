@@ -14,7 +14,7 @@ this.app :- https://biswarupgh0sh.github.io/weather-app/
 in celsius
   ![image](https://github.com/biswarupgh0sh/weather-app/assets/73950565/b678513a-9f03-4dc4-be51-448a4c578746)
   
-in farenheit
+in fahrenheit
 ![image](https://github.com/biswarupgh0sh/weather-app/assets/73950565/c1dbab81-aa89-40ac-8182-8529fdf225fc)
 
 mobile view
