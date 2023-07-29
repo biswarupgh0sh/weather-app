@@ -6,11 +6,17 @@ this.app :- https://biswarupgh0sh.github.io/weather-app/
 
 # Features
   1.By passing the name of any city one will also get the full name of the country.
+  
   2.Once the city name is passed the will notify the actual date and time in 12-hours format.
+  
   3.The temperature can be seen in celsius or farenheit as required.
+  
   4.Weather detail along with related icon and maximum and minimum temperature of that region.
+  
   5.Feels like, wind speed, humidity and air pressure.
+  
   6.The application is fully responsive
+  
 in celsius
   ![image](https://github.com/biswarupgh0sh/weather-app/assets/73950565/b678513a-9f03-4dc4-be51-448a4c578746)
   
